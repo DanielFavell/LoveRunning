@@ -149,7 +149,7 @@ margin-top: 47px;
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*media querys for larger screens, always at bottom of css file*/
+/*media querys for tablets and larger, always at bottom of css file*/
 @media screen and (min-width:768px){
     nav{
         display: block;
@@ -180,11 +180,42 @@ margin-top: 47px;
         width: 300px;
         right: 50px;
     }
-    
+    #benefits-physical, #benefits-mental{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    #benefits-physical > div, #benefits-mental > div{
+        width:75%;
+    }
+    #benefits-mental > div{
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 /*laptops and larger screens*/
 @media screen and (min-width:992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+    #benefits{
+        display: flex;
+        flex-direction: row;
+    }
+    #benefits > div{
+        flex: 1;
+    }
+    #benefits-mental{
+        order: 1;
+    }
+    #benefits-mental>div{
+        align-self: flex-start;
+    }
+    #benefits-physical > div{
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    
 }
