@@ -87,6 +87,40 @@ margin-top: 47px;
 #cover-text > h2, #cover-text > h3{
     color:#ffffff;
 }
+#reasons{
+    width: 90%;
+    margin: 20px auto;
+}
+#reasons > h2{
+    font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#benefits hr{
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+#benefits >div>div{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#benefits p{
+    padding: 0 20px;
+}
+#circle-cover-bg{
+    background: url(../images/reasons-image.webp) no-repeat top center/cover;
+    width: 90vw;
+    height: 90vh;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+#benefits-image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #social-networks{
     text-align: center;
@@ -146,6 +180,7 @@ margin-top: 47px;
         width: 300px;
         right: 50px;
     }
+    
 }
 /*laptops and larger screens*/
 @media screen and (min-width:992px) {
